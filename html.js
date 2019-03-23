@@ -1,0 +1,45 @@
+const tag = require('./tag')
+const component = require('./component')
+const castStream = require('./stream-cast')
+
+module.exports = component({
+  legend: tag('legend'),
+  button: tag('button'),
+  meta: tag('meta'),
+  noscript: tag('noscript'),
+  style: tag('style'),
+  // TODO: use alwaus stream to always returns this value
+  doctype: () => castStream('<!DOCTYPE html>'),
+  section: tag('section'),
+  main: tag('main'),
+  img: tag('img'),
+  header: tag('header'),
+  footer: tag('footer'),
+  dl: tag('dl'),
+  dd: tag('dd'),
+  dt: tag('dt'),
+  ul: tag('ul'),
+  li: tag('li'),
+  span: tag('span'),
+  b: tag('b'),
+  div: tag('div'),
+  // TODO: be more explicit about how this looks like
+  fieldset: tag('fieldset'),
+  link: tag('link', ''),
+  html: tag('html'),
+  body: tag('body'),
+  head: tag('head'),
+  title: tag('title'),
+  h1: tag('h1'),
+  a: tag('a'),
+  h2: tag('h2'),
+  h3: tag('h3'),
+  p: tag('p'),
+  article: tag('article'),
+  select: tag('select'),
+  form: tag('form'),
+  input: tag('input', ''),
+  label: tag('label'),
+  option: tag('option'),
+  script: tag('script'),
+})
