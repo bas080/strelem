@@ -22,6 +22,7 @@ module.exports = component({
   li: tag('li'),
   span: tag('span'),
   b: tag('b'),
+  i: tag('i'),
   div: tag('div'),
   // TODO: be more explicit about how this looks like
   fieldset: tag('fieldset'),
